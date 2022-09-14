@@ -37,7 +37,6 @@ int main(void)
  
     // Receive the server's response :
     recvfrom(socket_desc, server_message, sizeof(server_message), 0,(struct sockaddr*)&server_addr,&server_struct_length);
-   
     printf(" Server's response : %s \n ", server_message);
 
     close(socket_desc);
